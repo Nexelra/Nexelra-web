@@ -1,0 +1,14 @@
+const apiURL = import.meta.env.VITE_API_COSMOS ?? "http://localhost:1317";
+const rpcURL = import.meta.env.VITE_WS_TENDERMINT ?? "http://localhost:26657";
+const prefix = import.meta.env.VITE_ADDRESS_PREFIX ?? "cosmos";
+const TOKEN_ID = "374d67fb-5e29-77f1-e063-62199f0adbd1";
+const TOKEN_KEY = "MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAM3pGtsjqdbbsWOLMMO8u15PxoP8QPzqLvCbv0+ogkRG/fQV13ejKLmkeifE1+Ex5KYlJlGPKVZ6sl3dH+v8+tMCAwEAAQ==";
+const ACCESS_TOKEN = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0cmFuc2FjdGlvbl9pZCI6IjcxYzk4YzdlLWI0MjctNDQyZC04Mjc2LTlhMzQwN2RjYzVhYSIsInN1YiI6IjIyNjUwYjUzLTQ2Y2UtMTFmMC1hMjczLWY1MzA4ZDBiNzg4NiIsImF1ZCI6WyJyZXN0c2VydmljZSJdLCJ1c2VyX25hbWUiOiJwaGFtcGhpMzAwNDIwMDUxMDJAZ21haWwuY29tIiwic2NvcGUiOlsicmVhZCJdLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdCIsIm5hbWUiOiJwaGFtcGhpMzAwNDIwMDUxMDJAZ21haWwuY29tIiwiZXhwIjoxNzQ5OTExNTA1LCJ1dWlkX2FjY291bnQiOiIyMjY1MGI1My00NmNlLTExZjAtYTI3My1mNTMwOGQwYjc4ODYiLCJhdXRob3JpdGllcyI6WyJVU0VSIl0sImp0aSI6ImFiYzcxZDlkLWM1ZTYtNGRmNy05YTM3LTRiMTMyNmQ1Nzg3NiIsImNsaWVudF9pZCI6ImNsaWVudGFwcCJ9.IxR_fvQyF_o3nAky3tggA-kH1OY-zOMhfMymr6aX6owyiIxRHSBIYnX_HvMH7vf_8uv0kkzkImHspNIMlAGSyiRZoV7uG64_aC3IOzjUBTAZN7joEAszifkuDPyLmFAfNDKei5yw7-YFUxgo5mHbdwQShVYu1rdY5zhQ32ReRxdLEfrSyvt0vSgiZfRJlq2bGw6Q7FDLuv8kadWmgzmxWRy03mmJEZwm7v9f4JadtST8EQNDfwB2snIYJoF884oFjYzXbJqQSa7MpKDAz8ASMwC_iI1S_jqm8rPyKamaF1BU_GOxKnqpQgfL1A20qAVNWc-rzagmm8sWuV8yYGbdbQ";
+export const env = {
+  apiURL,
+  rpcURL,
+  prefix,
+  TOKEN_ID,
+  TOKEN_KEY,
+  ACCESS_TOKEN,
+};

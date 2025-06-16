@@ -202,7 +202,6 @@ export default function NexWalletConnect() {
         </div>
       )}
 
-      {/* Main modal - simplified for just connect screen */}
       <IgntModal
         visible={state.showModal}
         closeIcon={true}
@@ -221,7 +220,6 @@ export default function NexWalletConnect() {
         footer=""
       />
 
-      {/* 🆕 CreateWallet Component */}
       {state.showCreateWallet && (
         <CreateWallet
           onClose={handleCloseCreateWallet}
@@ -229,7 +227,6 @@ export default function NexWalletConnect() {
         />
       )}
 
-      {/* 🆕 ImportWallet Component */}
       {state.showImportWallet && (
         <ImportWallet
           onClose={handleCloseImportWallet}

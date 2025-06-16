@@ -44,7 +44,7 @@
   background: linear-gradient(135deg, #f39c12 0%, #f1c40f 100%);
 }
 
-/* Header */
+
 .identity-header {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
@@ -114,7 +114,7 @@
   transform: rotate(180deg);
 }
 
-/* Details */
+
 .identity-details {
   background: white;
   padding: 30px;
@@ -172,7 +172,7 @@
   border: 1px solid #bdc3c7;
 }
 
-/* Footer */
+
 .identity-footer {
   background: #f8f9fa;
   padding: 20px 30px;
@@ -204,7 +204,7 @@
   font-weight: 500;
 }
 
-/* Blockchain Info */
+
 .blockchain-info {
   background: #2c3e50;
   padding: 15px 30px;
@@ -224,7 +224,7 @@
   font-size: 16px;
 }
 
-/* Loading State */
+
 .loading-spinner {
   display: flex;
   flex-direction: column;
@@ -249,7 +249,7 @@
   100% { transform: rotate(360deg); }
 }
 
-/* Error State */
+
 .error-content {
   display: flex;
   flex-direction: column;
@@ -291,7 +291,7 @@
   border-color: rgba(255, 255, 255, 0.8);
 }
 
-/* No Identity State */
+
 .no-identity-content {
   display: flex;
   flex-direction: column;
@@ -344,7 +344,7 @@
   font-weight: 600;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .identity-header {
     padding: 20px;

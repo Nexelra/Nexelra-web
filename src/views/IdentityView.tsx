@@ -41,7 +41,6 @@ export default function IdentityView() {
           <p>Manage your digital identity on the blockchain</p>
         </div>
 
-        {/* Tab Navigation */}
         <div className="identity-tabs">
           <button
             className={`tab-button ${activeTab === 'create' ? 'active' : ''}`}
@@ -65,9 +64,7 @@ export default function IdentityView() {
           </button>
         </div>
 
-        {/* Tab Content */}
         <div className="tab-content">
-          {/* Create Identity Tab */}
           {activeTab === 'create' && (
             <CreateIdentity 
               onIdentityCreated={(identity) => {
@@ -79,7 +76,6 @@ export default function IdentityView() {
             />
           )}
           
-          {/* eKYC Tab - ID & Face Capture */}
           {activeTab === 'ekyc' && (
             <EkycIdentity 
               onEkycResult={(result) => {
@@ -92,7 +88,6 @@ export default function IdentityView() {
             />
           )}
           
-          {/* Verify Identity Tab */}
           {activeTab === 'verify' && (
             <VerifyIdentity 
               ekycResult={ekycResult}

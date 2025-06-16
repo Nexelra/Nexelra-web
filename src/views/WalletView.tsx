@@ -227,7 +227,7 @@ async function getIdentityByAddress(address: string): Promise<any | null> {
       <div className="container mx-auto px-4 py-8">
         <div className="text-center">
           <h1 className="text-3xl font-bold mb-4">No Wallet Connected</h1>
-          <p className="text-gray-600 mb-8">Please connect your Nex Wallet to view details.</p> {/* 🔄 Đổi từ "Phi Wallet" thành "Nex Wallet" */}
+          <p className="text-gray-600 mb-8">Please connect your Nex Wallet to view details.</p>
         </div>
       </div>
     );
@@ -240,21 +240,19 @@ async function getIdentityByAddress(address: string): Promise<any | null> {
           <div className="max-w-4xl mx-auto">
             <h1 className="text-3xl font-bold mb-8">Wallet Information</h1>
             
-            {/* 🔄 Enhanced Connection Status */}
             <div className="mb-4">
               {getConnectionStatusDisplay()}
             </div>
             
-            {/* Wallet Overview */}
             <IgntCard className="mb-6">
               <div className="p-6">
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center space-x-4">
                     <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl font-bold">
-                      N {/* 🔄 Đổi từ Φ thành N */}
+                      N 
                     </div>
                     <div>
-                      <h2 className="text-xl font-semibold">{activeWallet.name || "Nex Wallet"}</h2> {/* 🔄 Đổi từ "Phi Wallet" thành "Nex Wallet" */}
+                      <h2 className="text-xl font-semibold">{activeWallet.name || "Nex Wallet"}</h2>
                       <p className="text-gray-500">
                         {activeWallet.encryptedMnemonic ? "Encrypted Wallet" : "Legacy Wallet"}
                       </p>
@@ -266,7 +264,6 @@ async function getIdentityByAddress(address: string): Promise<any | null> {
                   </div>
                 </div>
 
-                {/* Address */}
                 <div className="mb-4">
                   <div className="text-sm font-medium text-gray-500 mb-2">Wallet Address</div>
                   <div className="bg-gray-50 p-3 rounded-lg">
@@ -274,7 +271,6 @@ async function getIdentityByAddress(address: string): Promise<any | null> {
                   </div>
                 </div>
 
-                {/* Balance */}
                 <div className="mb-4">
                   <div className="text-sm font-medium text-gray-500 mb-2">Balance</div>
                   <div className="flex items-center justify-between">
@@ -288,7 +284,6 @@ async function getIdentityByAddress(address: string): Promise<any | null> {
                       )}
                     </div>
                     <div className="flex space-x-2">
-                      {/* 🔄 Faucet always available (just needs address) */}
                       <IgntButton 
                         type="primary" 
                         onClick={handleRequestFaucet} 
@@ -297,7 +292,6 @@ async function getIdentityByAddress(address: string): Promise<any | null> {
                       >
                         🚰 Faucet
                       </IgntButton>
-                      {/* 🔄 Refresh always available */}
                       <IgntButton 
                         type="secondary" 
                         onClick={loadBalance} 
@@ -311,14 +305,12 @@ async function getIdentityByAddress(address: string): Promise<any | null> {
               </div>
             </IgntCard>
 
-            {/* Identity Information - ID Card Style */}
             {identity && (
               <div className="mb-6">
                 <h3 className="text-lg font-semibold mb-4">Identity Card</h3>
                 
                 <IgntCard className="bg-gradient-to-r from-blue-500 to-purple-600 max-w-3xl mx-auto">
                   <div className="p-8 text-white">
-                    {/* Header */}
                     <div className="flex items-center justify-between mb-8">
                       <div className="flex items-center space-x-4">
                         <div className="w-14 h-14 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
@@ -335,9 +327,7 @@ async function getIdentityByAddress(address: string): Promise<any | null> {
                       </div>
                     </div>
 
-                    {/* Main Content */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                      {/* Left Column */}
                       <div className="space-y-6">
                         <div>
                           <div className="text-xs text-white text-opacity-70 uppercase tracking-wide mb-2">Wallet Address</div>
@@ -354,7 +344,6 @@ async function getIdentityByAddress(address: string): Promise<any | null> {
                         </div>
                       </div>
 
-                      {/* Right Column */}
                       <div>
                         <div className="text-xs text-white text-opacity-70 uppercase tracking-wide mb-2">Identity Hash</div>
                         <div className="bg-white bg-opacity-10 p-4 rounded-lg h-full flex items-center border border-white border-opacity-20">
@@ -363,7 +352,6 @@ async function getIdentityByAddress(address: string): Promise<any | null> {
                       </div>
                     </div>
 
-                    {/* Footer */}
                     <div className="mt-8 pt-6 border-t border-white border-opacity-30">
                       <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-3">
@@ -380,12 +368,10 @@ async function getIdentityByAddress(address: string): Promise<any | null> {
               </div>
             )}
 
-            {/* Security Information */}
             <IgntCard className="mb-6">
               <div className="p-6">
                 <h3 className="text-lg font-semibold mb-4">Security Information</h3>
                 
-                {/* 🔄 Handle both encrypted and legacy wallets */}
                 {activeWallet.mnemonic && (
                   <div className="mb-4">
                     <div className="text-sm font-medium text-gray-500 mb-2">Recovery Phrase</div>
@@ -432,7 +418,6 @@ async function getIdentityByAddress(address: string): Promise<any | null> {
               </div>
             </IgntCard>
 
-            {/* Technical Details */}
             <IgntCard>
               <div className="p-6">
                 <h3 className="text-lg font-semibold mb-4">Technical Details</h3>
@@ -458,11 +443,9 @@ async function getIdentityByAddress(address: string): Promise<any | null> {
               </div>
             </IgntCard>
 
-            {/* Transaction History */}
             <TransactionHistory />
           </div>
 
-          {/* Recovery Phrase Modal - chỉ hiển thị nếu có mnemonic */}
           {activeWallet.mnemonic && (
             <IgntModal
               visible={showMnemonic}

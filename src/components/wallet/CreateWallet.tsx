@@ -232,7 +232,6 @@ const CreateWallet: React.FC<CreateWalletProps> = ({ onClose, onWalletCreated })
             <div className="confirm-step">
               <h2>📝 Backup Your Recovery Phrase</h2>
               
-              {/* Wallet info */}
               <div className="wallet-summary">
                 <p><strong>Wallet Name:</strong> {walletName}</p>
                 <p><strong>Address:</strong> {address.slice(0, 20)}...{address.slice(-8)}</p>
@@ -244,7 +243,6 @@ const CreateWallet: React.FC<CreateWalletProps> = ({ onClose, onWalletCreated })
                   ⚠️ <strong>Write this down and store it safely!</strong> You'll need it to recover your wallet.
                 </div>
                 
-                {/* 🆕 Debug info */}
                 {process.env.NODE_ENV === 'development' && (
                   <div style={{ fontSize: '12px', color: '#666', marginBottom: '10px' }}>
                     Debug: Mnemonic length: {mnemonic.length}, Words: {mnemonicWords.length}
@@ -266,7 +264,6 @@ const CreateWallet: React.FC<CreateWalletProps> = ({ onClose, onWalletCreated })
                   )}
                 </div>
                 
-                {/* 🆕 Copy to clipboard button */}
                 <div className="mnemonic-actions">
                   <button
                     type="button"

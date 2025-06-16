@@ -1,4 +1,4 @@
-/* Wallet Modal Styles */
+
 .nex-wallet-modal .modal-overlay,
 .create-wallet-modal .modal-overlay,
 .import-wallet-modal .modal-overlay {
@@ -27,7 +27,7 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* Wallet Info */
+
 .wallet-connected {
   display: flex;
   align-items: center;
@@ -68,7 +68,7 @@
   background: #dc2626;
 }
 
-/* Create Wallet Styles */
+
 .security-warning {
   background: #fef3c7;
   border: 1px solid #f59e0b;
@@ -135,7 +135,7 @@
   color: #212529;
 }
 
-/* Confirmation Section */
+
 .confirmation-section {
   margin: 24px 0;
 }
@@ -177,7 +177,7 @@
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
-/* Import Wallet Styles */
+
 .mnemonic-input-container {
   position: relative;
 }
@@ -220,7 +220,7 @@
   outline-offset: 2px;
 }
 
-/* Mnemonic Validation */
+
 .mnemonic-validation {
   margin-top: 8px;
 }
@@ -245,7 +245,7 @@
   border: 1px solid #ef4444;
 }
 
-/* Wallet Preview */
+
 .wallet-preview {
   background: #f0f9ff;
   border: 1px solid #0ea5e9;
@@ -280,7 +280,7 @@
   color: #1f2937;
 }
 
-/* Loading Step */
+
 .loading-step {
   text-align: center;
   padding: 48px 24px;
@@ -328,7 +328,7 @@
   100% { width: 100%; }
 }
 
-/* Enhanced Security Warning for Import */
+
 .import-wallet-modal .security-warning {
   background: #eff6ff;
   border: 1px solid #3b82f6;

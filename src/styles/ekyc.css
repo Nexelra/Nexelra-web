@@ -1,4 +1,4 @@
-/* eKYC Modal Styles - Center on screen */
+
 .ekyc-modal {
   position: fixed;
   top: 0;
@@ -9,8 +9,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2000; /* Higher z-index to ensure it's on top */
-  backdrop-filter: blur(3px); /* Optional: blur background */
+  z-index: 2000;
+  backdrop-filter: blur(3px);
 }
 
 .ekyc-modal-content {
@@ -26,7 +26,7 @@
   transform: translateY(0);
 }
 
-/* Animation for smooth popup appearance */
+
 @keyframes modalSlideIn {
   from {
     opacity: 0;
@@ -100,17 +100,17 @@
   font-weight: 600;
 }
 
-/* eKYC Identity Container */
+
 .ekyc-identity-container {
   width: 100%;
-  max-width: 1200px; /* Giới hạn chiều rộng tối đa */
-  margin: 0 auto; /* Căn giữa */
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
   box-sizing: border-box;
-  overflow: hidden; /* Ngăn overflow */
+  overflow: hidden;
 }
 
-/* eKYC SDK Integration */
+
 #ekyc_sdk_intergrated {
   width: 100% !important;
   max-width: 100% !important;
@@ -122,19 +122,17 @@
   background: white;
 }
 
-/* Verify Identity Container */
 .verify-identity-container {
   padding: 20px;
   max-width: 800px;
   margin: 0 auto;
-  max-height: 80vh; /* Giới hạn chiều cao 80% viewport */
-  overflow-y: auto; /* Cho phép scroll dọc */
-  overflow-x: hidden; /* Ẩn scroll ngang */
-  scroll-behavior: smooth; /* Smooth scrolling */
+  max-height: 80vh; 
+  overflow-y: auto; 
+  overflow-x: hidden; 
+  scroll-behavior: smooth;
   box-sizing: border-box;
 }
 
-/* Custom scrollbar styling */
 .verify-identity-container::-webkit-scrollbar {
   width: 8px;
 }
@@ -153,7 +151,6 @@
   background: #555;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
   .ekyc-modal-content {
     width: 95%;

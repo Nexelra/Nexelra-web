@@ -19,7 +19,7 @@
   font-size: 16px;
 }
 
-/* Tab Navigation */
+
 .identity-tabs {
   display: flex;
   justify-content: center;
@@ -53,7 +53,7 @@
   min-height: 400px;
 }
 
-/* No Wallet Message */
+
 .no-wallet-message {
   text-align: center;
   padding: 60px 20px;
@@ -64,7 +64,7 @@
   margin-bottom: 16px;
 }
 
-/* Create Identity */
+
 .create-identity {
   max-width: 600px;
   margin: 0 auto;
@@ -125,7 +125,7 @@
   transform: none;
 }
 
-/* Verify Identity */
+
 .verify-identity {
   max-width: 800px;
   margin: 0 auto;
@@ -169,7 +169,7 @@
   cursor: not-allowed;
 }
 
-/* Identity Card */
+
 .identity-card {
   border: 2px solid #e5e7eb;
   border-radius: 12px;
@@ -214,7 +214,7 @@
   margin: 8px 0;
 }
 
-/* Verification Section */
+
 .verification-section {
   margin-top: 24px;
   padding-top: 24px;
@@ -295,7 +295,7 @@
   font-weight: 600;
 }
 
-/* My Identity */
+
 .my-identity {
   max-width: 800px;
   margin: 0 auto;
@@ -363,7 +363,7 @@
   color: #6b7280;
 }
 
-/* Messages */
+
 .success-message {
   background: #d1fae5;
   border: 1px solid #059669;
@@ -389,7 +389,7 @@
   font-size: 18px;
 }
 
-/* IgntCard Component */
+
 .ignt-card {
   background: white;
   border-radius: 12px;
@@ -404,7 +404,7 @@
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-/* Identity Status Styles */
+
 .identity-status {
   margin-top: 15px;
   padding: 12px;
@@ -439,7 +439,7 @@
   display: inline-block;
 }
 
-/* Tab disabled message improvements */
+
 .tab-disabled-message {
   text-align: center;
   padding: 40px 20px;
@@ -476,7 +476,7 @@
   box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
 }
 
-/* Tab button improvements */
+
 .tab-button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
@@ -489,7 +489,7 @@
   box-shadow: none;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .identity-tabs {
     flex-direction: column;

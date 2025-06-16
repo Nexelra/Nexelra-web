@@ -143,7 +143,6 @@ const ImportWallet: React.FC<ImportWalletProps> = ({ onClose, onWalletImported }
 
   return (
     <div className="import-wallet-modal">
-      {/* Modal overlay with proper event handling */}
       <div 
         className="modal-overlay" 
         onClick={handleOverlayClick}
@@ -195,7 +194,6 @@ const ImportWallet: React.FC<ImportWalletProps> = ({ onClose, onWalletImported }
                     Separate each word with a space
                   </small>
                   
-                  {/* 🆕 Show word count and validation */}
                   {mnemonic.trim() && (
                     <div className="mnemonic-validation">
                       <span className={`word-count ${isValidMnemonicLength ? 'valid' : 'invalid'}`}>
@@ -206,7 +204,6 @@ const ImportWallet: React.FC<ImportWalletProps> = ({ onClose, onWalletImported }
                   )}
                 </div>
 
-                {/* Security Notice */}
                 <div className="security-warning">
                   <h3>🔒 Security Notice:</h3>
                   <ul>
@@ -241,7 +238,6 @@ const ImportWallet: React.FC<ImportWalletProps> = ({ onClose, onWalletImported }
             <div className="setup-step">
               <h2 id="modal-title">⚙️ Set Up Imported Wallet</h2>
               
-              {/* Show recovered wallet info */}
               <div className="wallet-preview">
                 <h3>✅ Recovery Phrase Validated</h3>
                 <div className="wallet-summary">
@@ -269,7 +265,6 @@ const ImportWallet: React.FC<ImportWalletProps> = ({ onClose, onWalletImported }
                   />
                 </div>
 
-                {/* Spending Password */}
                 <div className="form-group">
                   <label htmlFor="spendingPassword">
                     Spending Password: <span className="required">*</span>
@@ -301,7 +296,6 @@ const ImportWallet: React.FC<ImportWalletProps> = ({ onClose, onWalletImported }
                   </small>
                 </div>
 
-                {/* Confirm Password */}
                 <div className="form-group">
                   <label htmlFor="confirmPassword">
                     Confirm Spending Password: <span className="required">*</span>

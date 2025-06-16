@@ -71,7 +71,6 @@ export default function PortfolioView() {
   return (
     <div>
       <div className="container mx-auto">
-        {/* Wallet Connection & Test Section */}
         <div className="mb-4 p-4 bg-gray-100 rounded-lg">
           <h3 className="text-lg font-semibold mb-2">Identity Test</h3>
           

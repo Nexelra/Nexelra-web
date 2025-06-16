@@ -99,25 +99,6 @@ const SendTokens: React.FC<SendTokensProps> = ({
     ensureConnection();
   }, [activeWallet, nexWallet.isConnected, nexWallet.client]);
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-  
-  
-  
-
-  
   const isConnected = !!(
     activeWallet && 
     (connectionStatus === 'wallet-ready' || connectionStatus === 'connected' || connectionStatus === 'requires-password')
@@ -403,7 +384,6 @@ const SendTokens: React.FC<SendTokensProps> = ({
             <div className="error-message">❌ {error}</div>
           )}
           
-          {/* 🆕 Debug info */}
           <div className="debug-info" style={{ 
             fontSize: '12px', 
             color: '#666', 
@@ -481,7 +461,6 @@ const handleBackupWallet = () => {
           <div style={{ fontSize: '12px', marginTop: '4px', color: '#666' }}>
             Wallet: {activeWallet.accounts[0]?.address.slice(0, 12)}...{activeWallet.accounts[0]?.address.slice(-8)}
             
-            {/* 🆕 Backup button */}
             <button
               onClick={handleBackupWallet}
               style={{
@@ -501,7 +480,6 @@ const handleBackupWallet = () => {
         )}
       </div>
 
-      {/* 🆕 Balance Display */}
       <div className="balance-section" style={{
         padding: '12px',
         backgroundColor: '#f8f9fa',
@@ -542,7 +520,6 @@ const handleBackupWallet = () => {
       </div>
 
       <form onSubmit={handleSend}>
-        {/* Amount input with Max button */}
         <div className="form-group">
           <label htmlFor="amount">Amount:</label>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
@@ -557,7 +534,6 @@ const handleBackupWallet = () => {
               required
               style={{ flex: 1 }}
             />
-            {/* 🆕 Max button */}
             {balance && (
               <button
                 type="button"
@@ -627,7 +603,6 @@ const handleBackupWallet = () => {
         </button>
       </form>
 
-      {/* 🆕 Updated PasswordModal with isUnlocking from hook */}
       <PasswordModal
         isOpen={showPasswordModal}
         onClose={() => {
@@ -641,7 +616,6 @@ const handleBackupWallet = () => {
         error={passwordError || undefined}
       />
 
-      {/* 🆕 Backup Modal */}
       {showBackupModal && backupMnemonic && (
         <BackupModal
           isOpen={showBackupModal}
@@ -655,7 +629,6 @@ const handleBackupWallet = () => {
         />
       )}
 
-      {/* Transaction Signing Modal */}
       {showSigningModal && pendingTransaction && (
         <TransactionSigning
           transaction={pendingTransaction}
@@ -665,7 +638,6 @@ const handleBackupWallet = () => {
         />
       )}
 
-      {/* Error/Success Messages */}
       {error && (
         <div className="error-message" style={{ 
           color: '#721c24', 

@@ -17,7 +17,9 @@ interface EkycConfig {
   CALL_BACK_END_FLOW: (result: any) => Promise<void>;
   HAS_BACKGROUND_IMAGE: boolean;
   LIST_TYPE_DOCUMENT: number[];
+  DOCUMENT_TYPE_START?: number;
 }
+
 
 interface EkycSDKProps {
   config?: Partial<EkycConfig>;
@@ -55,27 +57,14 @@ const EkycSDK: React.FC<EkycSDKProps> = ({ config, onResult, cccdId }) => {
           CALL_BACK_END_FLOW: async (result: any) => {
             console.log('result ==>', result);
             console.log('cccdId from props ==>', cccdId); 
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
             if (onResult) {
               onResult(result);
             }
           },
           HAS_BACKGROUND_IMAGE: true,
-          LIST_TYPE_DOCUMENT: [-1, 4, 5, 6, 7],
+          LIST_TYPE_DOCUMENT: [-1],
+          DOCUMENT_TYPE_START: 1,
         };
 
         const finalConfig = { ...defaultConfig, ...config };
